@@ -1,0 +1,136 @@
+
+table{
+    border:1px solid #CCC;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption{
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr{
+    background-color: var(--surface);
+    border: 1px solid var(--border-light);
+    padding: .35em;
+  }
+  
+  table th,
+  table td{
+    padding: .62em;
+    text-align: center;
+  }
+  
+  table th{
+    font-size: 16px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  table td {
+    font-size: 15px;
+  }
+  
+  table td .action-customers{
+    border:0;
+    padding: 5px;
+    margin-right: 5px;
+    align-items: center;
+    display: inline-block;
+    border-radius: 4px;
+  }
+  
+  table td .action-customers svg{
+     margin-right: 3px;
+     width: 20px;
+     height: 20px;
+  }
+
+  .search-customers{
+    clear: both;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0 12px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    max-width: 420px;
+  }
+
+  .search-customers input{
+    border: 0;
+    outline: none;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 15px;
+    background: transparent;
+  }
+
+  /* Cabeçalhos ordenáveis */
+  .th-sort{
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  .th-sort:hover{
+    color: #3583f6;
+  }
+
+  /* Célula "Chamados": link para a tela de Chamados filtrada */
+  .link-chamados{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--border);
+    background-color: var(--surface-2);
+    color: var(--text);
+    padding: 5px 10px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 0.95em;
+  }
+
+  .link-chamados:hover{
+    border-color: #3583f6;
+    color: #3583f6;
+  }
+
+  .link-chamados small{
+    color: var(--text-muted);
+  }
+
+  .sem-chamados{
+    color: var(--text-muted);
+  }
+
+  /* Paginação */
+  .paginacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 18px 0;
+    font-size: 0.95em;
+    color: var(--text-muted);
+  }
+
+  .paginacao button{
+    background-color: #181c2e;
+    color: #FFF;
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .paginacao button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
