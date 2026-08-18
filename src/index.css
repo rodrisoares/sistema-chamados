@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+  /* Paleta clara (padrão) */
+  --bg: #EFEFEF;
+  --surface: #f8f8f8;
+  --surface-2: #FFFFFF;
+  --text: #121212;
+  --text-muted: #666666;
+  --border: #CCCCCC;
+  --border-light: #e2e2e2;
+  --sidebar-bg: #181C2e;
+  --sidebar-hover: #121212;
+  --primary: #3583f6;
+  --shadow: rgba(0,0,0,0.08);
+
+  /* Espaçamentos consistentes */
+  --space-1: 6px;
+  --space-2: 12px;
+  --space-3: 18px;
+  --space-4: 24px;
+  --radius: 6px;
+}
+
+[data-theme="dark"]{
+  --bg: #1a1d29;
+  --surface: #242836;
+  --surface-2: #2c3140;
+  --text: #f1f1f1;
+  --text-muted: #a9b0c0;
+  --border: #3a3f52;
+  --border-light: #3a3f52;
+  --sidebar-bg: #12141d;
+  --sidebar-hover: #0c0e15;
+  --primary: #4a90ff;
+  --shadow: rgba(0,0,0,0.45);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: 0;
+}
+
+html, body, #root{
+  height: 100%;
+}
+
+body{
+  font: 14px 'Roboto', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+button{
+ cursor: pointer;
+}
+
+/* Controles de formulário seguem o tema */
+input, textarea, select{
+  background-color: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+/* Feedback visual de campo inválido */
+.input-invalid{
+  border: 1px solid #ff0000 !important;
+  box-shadow: 0 0 0 1px rgba(255,0,0,0.25);
+}
